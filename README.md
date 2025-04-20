@@ -1,3 +1,5 @@
+⚠️ In fase di completamento, informazioni all'interno del sito ancora non complete
+
 # 🌐 Portfolio Web - Nicolò Grisoni 
 Benvenuto nel mio **portfolio online** – uno spazio digitale dove tecnologia, passione e creatività si incontrano per raccontare il mio percorso da sviluppatore. 🚀
 
