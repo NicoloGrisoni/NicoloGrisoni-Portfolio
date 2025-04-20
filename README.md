@@ -5,15 +5,15 @@ Benvenuto nel mio **portfolio online** – uno spazio digitale dove tecnologia, 
 
 ## 👨‍💻 Chi Sono
 
-Sono uno sviluppatore appassionato con esperienza in **frontend**, **backend** e **progetti full stack**. Credo nel potere del codice per creare soluzioni eleganti, funzionali e scalabili. Amo lavorare in team, imparare continuamente e sperimentare nuove tecnologie.
+Sono uno sviluppatore molto appassionato con interesse alla progettazione e allo sviluppo di **progetti full stack**, ponendo attenzione a **UI** e **UX**. Credo nel potere del codice per creare soluzioni eleganti, funzionali e scalabili. Amo lavorare in team e sperimentare nuovi linguaggi e nuove tecnologie. Mi piace mettermi in gioco di continuo in nuove sfide che possano portarmi a migliorare le mie competenze ed espandere le mie conoscenze informatiche.
 
 <br>
 
 ## 🛠️ Tecnologie e Competenze
 
-- **Frontend:** HTML, CSS, JavaScript, TailwindCSS  
-- **Backend:** PHP, MySQL  
-- **Linguaggi:** C++, C#, Java, Python, Dart  
+- **Frontend:** HTML, CSS, JavaScript, TailwindCSS
+- **Backend:** PHP, MySQL
+- **Linguaggi:** C++, C#, Java, Python, Dart
 - **Tools & Frameworks:** Git, Flutter, Arduino, REST API  
 - **Formati dati:** JSON, CSV, XML
 
@@ -21,11 +21,7 @@ Sono uno sviluppatore appassionato con esperienza in **frontend**, **backend** e
 
 ## 📂 Progetti in Evidenza
 
-### 🌡️Rilevazione temperature
-> Un'applicazione C# collegata al DHT Sensor di Arduino per la rilevazione di temperature 
-> **Tecnologie:** C#, Arduino
-
-🔗 *Scopri altri progetti sul mio GitHub!*
+🔗 *Scopri tutti i miei progetti su GitHub!*
 
 <br>
 
