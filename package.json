@@ -1,0 +1,25 @@
+{
+  "name": "nicolo-grisoni-portfolio",
+  "version": "1.0.0",
+  "description": "Web portfolio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NicoloGrisoni/NicoloGrisoni-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NicoloGrisoni/NicoloGrisoni-Portfolio/issues"
+  },
+  "homepage": "https://github.com/NicoloGrisoni/NicoloGrisoni-Portfolio#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

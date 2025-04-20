@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-sans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolò Grisoni — Portfolio</title>
+
+  <!-- Google Font: Poppins -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS (build locale) -->
+  <link rel="stylesheet" href="build/tailwind.css" />
+
+  <!-- JavaScript (defer) -->
+  <script defer src="main.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <!-- NAVBAR -->
+  <div id="home" style="visibility: hidden;"></div>
+  <header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50">
+    <div class="max-w-4xl mx-auto flex items-center justify-between p-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <span class="font-bold text-2xl">Nicolò Grisoni</span>
+        <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+      </a>
+
+      <!-- Desktop menu -->
+      <nav class="hidden lg:flex space-x-6 text-lg font-medium">
+        <a href="#home" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Home</a>
+        <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Showcase</a>
+        <a href="#about" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">About</a>
+        <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Projects</a>
+        <a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Skills</a>
+        <a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Controls -->
+      <div class="flex items-center space-x-2">
+        <!-- Theme toggle -->
+        <button id="theme-toggle" class="p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+          <svg id="icon-sun" class="w-6 h-6 hidden" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2m0 18v2m11-11h-2M3 12H1m16.95 6.95l-1.414-1.414M6.464 6.464L5.05 5.05m12.02 0l-1.414 1.414M6.464 17.536L5.05 18.95"/>
+          </svg>
+          <svg id="icon-moon" class="w-6 h-6" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+        </button>
+        <!-- Hamburger menu -->
+        <button id="menu-toggle" class="lg:hidden p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="fixed inset-0 bg-white/95 dark:bg-gray-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold transform scale-0 transition-transform duration-300 origin-top-right z-40">
+    <a href="#home" class="hover:text-blue-500 dark:hover:text-blue-800">Home</a>
+    <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800">Showcase</a>
+    <a href="#about" class="hover:text-blue-500 dark:hover:text-blue-800">About</a>
+    <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800">Projects</a>
+    <a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-800">Skills</a>
+    <a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-800">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="pt-24">
+    <!-- Hero -->
+    <section class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 space-y-6">
+      <h1 class="text-6xl md:text-7xl font-bold">Hi, I&rsquo;m Nicolò Grisoni</h1>
+      <p class="text-xl md:text-2xl max-w-2xl">Passionate Web &amp; UI/UX Developer crafting modern digital experiences.</p>
+      <div class="space-x-6">
+        <a href="#about" class="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg font-medium hover:bg-blue-800 transition-colors">Learn More</a>
+        <a href="#projects" class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg text-lg font-medium hover:bg-blue-500/10 dark:hover:bg-blue-800/10 transition-colors">See My Work</a>
+      </div>
+    </section>
+
+    <!-- Terminal section -->
+    <section class="max-w-2xl mx-auto px-4 mt-16">
+      <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+        <!-- Top bar like macOS -->
+        <div class="flex items-center space-x-2 px-3 py-2 bg-gray-200 dark:bg-gray-700">
+          <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+          <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+          <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+        </div>
+        <!-- Terminal body -->
+        <pre class="p-4 font-mono text-sm">
+          <span id="typed-text" class="inline-block">$ </span>
+        </pre>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <div id="showcase" style="visibility: hidden;"></div>
+    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Showcase</h2>
+      <p class="text-lg">Discover elegant UI components and coding snippets I've crafted.</p>
+    </section>
+
+    <!-- About -->
+    <div id="about" style="visibility: hidden;"></div>
+    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+      <p class="text-lg">Hi! I'm Nicog, a tech enthusiast with a passion for web development and user experience design. I enjoy creating clean, modern interfaces and solving real-world problems through code.</p>
+    </section>
+
+    <!-- Projects -->
+    <div id="projects" style="visibility: hidden;"></div>
+    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Projects</h2>
+      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mb-6">
+        <h3 class="text-2xl font-semibold mb-2">Temperature relevation</h3>
+        <p class="text-gray-600 dark:text-gray-300">
+          For more info
+          <a target="_blank" href="https://github.com/NicoloGrisoni/Progetto-rilevazione-temperature.git" class="text-blue-500 hover:underline">click here</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <div id="skills" style="visibility: hidden;"></div>
+    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>C++</li><li>C#</li><li>MySQL</li>
+        <li>Dart</li><li>Arduino</li><li>Java</li><li>Python</li><li>JSON</li><li>CSV</li><li>XML</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <div id="contact" style="visibility: hidden;"></div>
+    <section class="max-w-3xl mx-auto px-4 my-20 text-center">
+      <h2 class="text-4xl font-bold mb-4">Get in Touch</h2>
+      <p class="text-lg mb-6">Feel free to reach out for collaborations or just say hello 👋</p>
+      <div class="space-y-2 text-lg">
+        <p>Email: <a href="mailto:grisoninicolo@gmail.com" class="text-blue-500 hover:underline">grisoninicolo@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/NicoloGrisoni" class="text-blue-500 hover:underline">github.com/NicoloGrisoni</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/nicologrisoni" class="text-blue-500 hover:underline">Nicolò Grisoni</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
