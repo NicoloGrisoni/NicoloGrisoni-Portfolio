@@ -14,8 +14,8 @@
   <!-- Tailwind CSS (build locale) -->
   <link rel="stylesheet" href="build/tailwind.css" />
 
-  <!-- JavaScript (defer) -->
-  <script defer src="main.js"></script>
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
 </head>
 
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
@@ -32,10 +32,10 @@
       <!-- Desktop menu -->
       <nav class="hidden lg:flex space-x-6 text-lg font-medium">
         <a href="#home" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Home</a>
-        <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Showcase</a>
         <a href="#about" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">About</a>
-        <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Projects</a>
         <a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Projects</a>
+        <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Showcase</a>
         <a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-800 transition-colors">Contact</a>
       </nav>
 
@@ -62,24 +62,32 @@
   </header>
 
   <!-- Mobile menu -->
-  <nav id="mobile-menu" class="fixed inset-0 bg-white/95 dark:bg-gray-900/95 flex flex-col items-center justify-center space-y-8 text-2xl font-semibold transform scale-0 transition-transform duration-300 origin-top-right z-40">
+  <nav id="mobile-menu" class="fixed inset-0 bg-white/95 dark:bg-gray-900/95 flex flex-col items-center justify-center 
+  space-y-8 text-2xl font-semibold transform scale-0 transition-transform duration-300 origin-top-right z-40">
     <a href="#home" class="hover:text-blue-500 dark:hover:text-blue-800">Home</a>
-    <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800">Showcase</a>
     <a href="#about" class="hover:text-blue-500 dark:hover:text-blue-800">About</a>
-    <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800">Projects</a>
     <a href="#skills" class="hover:text-blue-500 dark:hover:text-blue-800">Skills</a>
+    <a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-800">Projects</a>
+    <a href="#showcase" class="hover:text-blue-500 dark:hover:text-blue-800">Showcase</a>
     <a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-800">Contact</a>
   </nav>
+
 
   <!-- MAIN CONTENT -->
   <main class="pt-24">
     <!-- Hero -->
     <section class="min-h-[60vh] flex flex-col items-center justify-center text-center px-4 space-y-6">
       <h1 class="text-6xl md:text-7xl font-bold">Hi, I&rsquo;m Nicolò Grisoni</h1>
-      <p class="text-xl md:text-2xl max-w-2xl">Passionate Web &amp; UI/UX Developer crafting modern digital experiences.</p>
+      <p class="text-xl md:text-2xl max-w-2xl">Junior software developer with a passion for full-stack development and 
+        a strong interest in modern, responsive UI/UX design.</p>
       <div class="space-x-6">
-        <a href="#about" class="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg font-medium hover:bg-blue-800 transition-colors">Learn More</a>
-        <a href="#projects" class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg text-lg font-medium hover:bg-blue-500/10 dark:hover:bg-blue-800/10 transition-colors">See My Work</a>
+        <a href="#about" class="px-6 py-3 bg-blue-500 text-white rounded-lg text-lg font-medium hover:bg-blue-800 transition-colors">
+          Learn More
+        </a>
+        <a href="#projects" class="px-6 py-3 border-2 border-blue-500 text-blue-500 rounded-lg text-lg font-medium hover:bg-blue-500/10 
+        dark:hover:bg-blue-800/10 transition-colors">
+          See My Work
+        </a>
       </div>
     </section>
 
@@ -99,31 +107,13 @@
       </div>
     </section>
 
-    <!-- Showcase -->
-    <div id="showcase" style="visibility: hidden;"></div>
-    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
-      <h2 class="text-4xl font-bold mb-6">Showcase</h2>
-      <p class="text-lg">Discover elegant UI components and coding snippets I've crafted.</p>
-    </section>
-
     <!-- About -->
     <div id="about" style="visibility: hidden;"></div>
     <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
       <h2 class="text-4xl font-bold mb-6">About Me</h2>
-      <p class="text-lg">Hi! I'm Nicog, a tech enthusiast with a passion for web development and user experience design. I enjoy creating clean, modern interfaces and solving real-world problems through code.</p>
-    </section>
-
-    <!-- Projects -->
-    <div id="projects" style="visibility: hidden;"></div>
-    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
-      <h2 class="text-4xl font-bold mb-6">Projects</h2>
-      <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 mb-6">
-        <h3 class="text-2xl font-semibold mb-2">Temperature relevation</h3>
-        <p class="text-gray-600 dark:text-gray-300">
-          For more info
-          <a target="_blank" href="https://github.com/NicoloGrisoni/Progetto-rilevazione-temperature.git" class="text-blue-500 hover:underline">click here</a>
-        </p>
-      </div>
+      <p class="text-lg">Hi! I'm Nicolò Grisoni, a junior software developer with a passion and a cross-functional interest 
+        in all layers of application architecture. I'm also highly interested in modern, interactive, and responsive UI/UX design, 
+        aiming to create engaging and user-friendly digital experiences.</p>
     </section>
 
     <!-- Skills -->
@@ -131,9 +121,48 @@
     <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
       <h2 class="text-4xl font-bold mb-6">Skills</h2>
       <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg">
-        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>C++</li><li>C#</li><li>MySQL</li>
-        <li>Dart</li><li>Arduino</li><li>Java</li><li>Python</li><li>JSON</li><li>CSV</li><li>XML</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>MySQL</li>
+        <li>Dart</li>
+        <li>Arduino</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JSON</li>
+        <li>CSV</li>
+        <li>XML</li>
       </ul>
+    </section>
+
+    <!-- Projects section -->
+    <div id="projects" style="visibility: hidden;"></div>
+    <section class="max-w-6xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Projects</h2>
+      <!-- Div for all the projects -->
+      <div class="grid gap-8 justify-center" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <!-- Card of the project -->
+        <div class="bg-white dark:bg-gray-800 shadow rounded-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-semibold mb-2">FateBound</h3>
+          <p class="flex-1 text-gray-600 dark:text-gray-300 mb-4">
+            For more info 
+            <a target="_blank" href="https://github.com/NicoloGrisoni/FateBound"
+            class="text-blue-500 hover:underline">
+              click here
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>     
+
+    <!-- Showcase -->
+    <div id="showcase" style="visibility: hidden;"></div>
+    <section class="max-w-4xl mx-auto mt-24 px-4 text-center">
+      <h2 class="text-4xl font-bold mb-6">Showcase</h2>
+      <p class="text-lg">Discover elegant UI components and coding snippets I've crafted.</p>
     </section>
 
     <!-- Contact -->
